@@ -62,17 +62,20 @@ div.short_area {
         display: inline-block;
         padding: 2px 12px;
         border-radius: 8px;
+        margin-bottom: 12px;
+    }
 
-        &[type=button] {
-            background-color: $cyan;
-            color: $white;
-            font-size: 1em;
-            font-weight: 700;
-        }
-
-        &:first-child {
-            margin-bottom: 12px;
-        }
+    & button.btn-short {
+        width: 100%;
+        height: 45px;
+        display: inline-block;
+        padding: 2px 12px;
+        border-radius: 8px;
+        background-color: $cyan;
+        color: $white;
+        font-size: 1em;
+        font-weight: 700;
+        border: none;
     }
 }
 

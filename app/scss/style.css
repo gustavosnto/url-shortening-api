@@ -87,17 +87,20 @@ div.short_area input {
   display: inline-block;
   padding: 2px 12px;
   border-radius: 8px;
+  margin-bottom: 12px;
 }
 
-div.short_area input[type=button] {
+div.short_area button.btn-short {
+  width: 100%;
+  height: 45px;
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 8px;
   background-color: #2acfcf;
   color: #FFF;
   font-size: 1em;
   font-weight: 700;
-}
-
-div.short_area input:first-child {
-  margin-bottom: 12px;
+  border: none;
 }
 
 section.box_statistics {
