@@ -32,6 +32,7 @@ section.hero {
 
         & .hero_title {
             order: 2;
+            width: 100%;
             margin-top: 40px;
             text-align: center;
 
@@ -100,7 +101,7 @@ div.short_area {
 section.box_statistics {
     width: 100%;
     padding: 120px 0;
-    background-color: $gray;
+    background-color: $grayNew;
 
     & .container {
         text-align: center;

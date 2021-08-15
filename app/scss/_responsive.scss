@@ -1,7 +1,202 @@
-@media (min-width: 72em) {}
+@media (min-width: 72em) {
+    section.hero {
+        background-position-x: 850px;
+    }
+}
 
-@media (min-width: 60em) {}
+@media (min-width: 60em) {
+    header.top_header {                
+        & a {
+            color: $gray;
+            font-weight: 700;
 
-@media (min-width: 48em) {}
+            &:hover {
+                color: $black;
+            }
+        }
+
+        & .container {
+            & .header_logo {
+                flex-basis: 15%;
+            }
+
+            & .header_nav {
+                flex-basis: 65%;
+                display: block;
+
+                & ul li {
+                    display: inline;
+                    padding-left: 15px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+        
+            & .header_login {
+                flex-basis: 20%;
+                display: block;
+
+                & ul li {
+                    display: inline;
+                    padding-left: 15px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            & .nav_phone {
+                display: none;
+            }
+        }
+    }
+
+    section.hero {
+        background-image: url(/images/illustration-working.svg);
+        background-repeat: no-repeat;
+        background-position-x: 600px;
+    
+        & .container {
+            margin: 100px auto;
+
+            & .hero_title {
+                flex-basis: 50%;
+                order: 1;
+                text-align: left;
+
+                & h1 {
+                    font-size: 4.5em;
+                }
+            }
+    
+            & .hero_img {
+                flex-basis: 50%;
+                background-image: none;
+                order: 2;
+            }
+        }
+    }
+
+    div.short_area {
+        padding: 40px 30px;
+        background-image: url(/images/bg-shorten-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-y: -10px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+            
+        & input {
+            width: 83%;
+            height: 60px;
+            margin-bottom: 0px;
+        }
+    
+        & button.btn-short {
+            width: 15%;
+            height: 60px;
+        }
+    }
+
+    section.box_statistics {
+        padding: 120px 0 20px 0;
+
+        & .container {    
+            & h1 {
+                font-size: 2em;
+                padding-bottom: 12px;
+            }
+    
+            & > p {
+                width: 475px;
+                margin: 0 auto;
+                padding-bottom: 40px;
+            }
+    
+            & .box_statistics_area {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+    
+                &_content {
+                    flex-basis: 32%;
+                    text-align: left;
+
+                    &:first-child {
+                        margin-bottom: 150px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: 60px;
+                        margin-bottom: 120px;
+                    }
+    
+                    &:last-child {
+                        margin-top: 120px;
+                        margin-bottom: 80px;
+                    }
+
+                    & .img-box {
+                        margin: -80px 0 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 48em) {
+    section.cta_footer {
+        background-image: url(/images/bg-boost-desktop.svg);
+    }
+
+    footer.footer_area {
+        width: 100%;
+        background-color: $veryDarkViolet;
+        color: $white;
+        padding: 35px 0;
+        text-align: center;
+    
+        & .container {
+            display: flex;
+            flex-wrap: wrap;
+
+            & .footer_area_box {
+                &:first-child {
+                    flex-basis: 35%;
+                    text-align: left;
+                }
+
+                &:nth-child(2){
+                    flex-basis: 15%;
+                    text-align: left;
+                }
+
+                &:nth-child(3){
+                    flex-basis: 15%;
+                    text-align: left;
+                }
+
+                &:nth-child(4){
+                    flex-basis: 15%;
+                    text-align: left;
+                }
+
+                &:last-child {
+                    flex-basis: 20%;
+
+                    & ul.social {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (min-width: 42em) {}
