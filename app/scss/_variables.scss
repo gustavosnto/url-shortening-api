@@ -159,6 +159,8 @@ section.cta_footer {
     padding: 60px 0;
     background-color: $darkViolet;
     background-image: url(/images/bg-boost-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     & .container {
         text-align: center;
@@ -198,6 +200,19 @@ footer.footer_area {
                 }
             }
 
+            & ul.social {
+                margin-top: 25px;
+
+                & li {
+                    padding-left: 20px;
+                    padding-bottom: 0;
+                    display: inline-block;
+
+                    &:first-child {
+                        padding-left: 0px;
+                    }
+                }
+            }
         }
     }
 }
