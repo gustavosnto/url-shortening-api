@@ -33,6 +33,11 @@ a {
         background-color: $cyan;
         display: inline-block;
         border-radius: 30px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 80%;
+        }
     }
 }
 

@@ -1,6 +1,49 @@
-@media (min-width: 72em) {
-    section.hero {
-        background-position-x: 850px;
+@media (min-width: 48em) {
+    section.cta_footer {
+        background-image: url(/images/bg-boost-desktop.svg);
+    }
+
+    footer.footer_area {
+        width: 100%;
+        background-color: $veryDarkViolet;
+        color: $white;
+        padding: 35px 0;
+        text-align: center;
+    
+        & .container {
+            display: flex;
+            flex-wrap: wrap;
+
+            & .footer_area_box {
+                &:first-child {
+                    flex-basis: 35%;
+                    text-align: left;
+                }
+
+                &:nth-child(2){
+                    flex-basis: 15%;
+                    text-align: left;
+                }
+
+                &:nth-child(3){
+                    flex-basis: 15%;
+                    text-align: left;
+                }
+
+                &:nth-child(4){
+                    flex-basis: 15%;
+                    text-align: left;
+                }
+
+                &:last-child {
+                    flex-basis: 20%;
+
+                    & ul.social {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -21,7 +64,7 @@
             }
 
             & .header_nav {
-                flex-basis: 65%;
+                flex-basis: 61%;
                 display: block;
 
                 & ul li {
@@ -35,7 +78,7 @@
             }
         
             & .header_login {
-                flex-basis: 20%;
+                flex-basis: 24%;
                 display: block;
 
                 & ul li {
@@ -57,9 +100,10 @@
     section.hero {
         background-image: url(/images/illustration-working.svg);
         background-repeat: no-repeat;
-        background-position-x: 600px;
+        background-position-x: 470px;
     
         & .container {
+            width: calc(100% - 30px);
             margin: 100px auto;
 
             & .hero_title {
@@ -70,10 +114,15 @@
                 & h1 {
                     font-size: 4.5em;
                 }
+
+                & p {
+                    width: 550px;
+                    font-size: 20px;
+                }
             }
     
             & .hero_img {
-                flex-basis: 50%;
+                flex-basis: 40%;
                 background-image: none;
                 order: 2;
             }
@@ -150,53 +199,14 @@
     }
 }
 
-@media (min-width: 48em) {
-    section.cta_footer {
-        background-image: url(/images/bg-boost-desktop.svg);
-    }
-
-    footer.footer_area {
-        width: 100%;
-        background-color: $veryDarkViolet;
-        color: $white;
-        padding: 35px 0;
-        text-align: center;
-    
-        & .container {
-            display: flex;
-            flex-wrap: wrap;
-
-            & .footer_area_box {
-                &:first-child {
-                    flex-basis: 35%;
-                    text-align: left;
-                }
-
-                &:nth-child(2){
-                    flex-basis: 15%;
-                    text-align: left;
-                }
-
-                &:nth-child(3){
-                    flex-basis: 15%;
-                    text-align: left;
-                }
-
-                &:nth-child(4){
-                    flex-basis: 15%;
-                    text-align: left;
-                }
-
-                &:last-child {
-                    flex-basis: 20%;
-
-                    & ul.social {
-                        margin-top: 5px;
-                    }
-                }
-            }
-        }
+@media (min-width: 68em) {
+    section.hero {
+        background-position-x: 700px!important;
     }
 }
 
-@media (min-width: 42em) {}
+@media (min-width: 72em) {
+    section.hero {
+        background-position-x: 850px;
+    }
+}
